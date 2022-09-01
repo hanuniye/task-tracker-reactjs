@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    {
+      "text": "visit mugadisho",
+      "date": "monday 13th",
+      "reminder": true,
+      "id": 1
+    }
+  ]
+}

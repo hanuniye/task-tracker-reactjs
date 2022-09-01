@@ -4,7 +4,7 @@ const Header = ({changeShowTask,showTask}) => {
   return (
     <div className='header-cont'>
       <h3>Task Tracker</h3>
-      <button style={{ backgroundColor: "green" }}
+      <button style={{ backgroundColor: `${showTask ? "red" : "green"}` }}
       onClick={changeShowTask}
       >{showTask ? "Close" : "Add"}</button>
     </div>

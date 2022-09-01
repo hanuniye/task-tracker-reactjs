@@ -2,10 +2,10 @@ import "../App.css"
 
 const Task = ({task,setReminder,deleteTask}) => {
   return (
-    task.map(item =>{
+    task.map((item) =>{
       return <div className={`task-cont ${item.reminder ? "reminder" : ""}`}  
       onDoubleClick={() =>{
-        setReminder(item.key)
+        setReminder(item.id)
       }}>
       <div>
         <h5 style={{ textTransform:"capitalize" }}>{item.text}</h5>
@@ -14,7 +14,7 @@ const Task = ({task,setReminder,deleteTask}) => {
 
       <i className="fa-solid fa-xmark" 
       onClick={() =>{
-        deleteTask(item.key)
+        deleteTask(item.id)
       }} 
       style={{ color:"red", cursor:"pointer",fontSize:"20px" }}></i>
     </div>
